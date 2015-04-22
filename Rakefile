@@ -9,11 +9,10 @@ rescue LoadError
 end
 
 RSpec::Core::RakeTask.new(:spec) do |t|
+  require "#{specdir}/spec_helper.rb"
   t.rspec_opts = "--color"
 end
 
-task :test do
-  require "#{specdir}/spec_helper.rb"
-end
+task :test => :spec
 
-task :default => :spec
+task :default => :test
