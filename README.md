@@ -1,5 +1,7 @@
 #MCollective Sensu Agent
 
+[![Build Status](https://travis-ci.org/rickard-von-essen/mcollective-sensu-agent.svg?branch=master)](https://travis-ci.org/rickard-von-essen/mcollective-sensu-agent)
+
 Often after just doing a change on servers you want to just be sure that they’re all going to pass a certain
 Sensu check.
 
